@@ -34,7 +34,7 @@ class LEAR(Explainer):
         """
         inputs = inputs.to(self.device)
 
-        if labels.dim() == 1:
+        if targets.dim() == 1:
             targets = torch.nn.functional.one_hot(targets, num_classes=self.num_labels)
         targets = targets.to(self.device)
 
