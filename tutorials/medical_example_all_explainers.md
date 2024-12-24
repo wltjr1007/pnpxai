@@ -269,23 +269,23 @@ The LEAR framework demonstrates the following key properties, attributed to its 
 
 1. **Sparsity and Specificity**:
    - LEAR highlights only the most critical regions necessary for transforming the input condition (Normal) into the target condition (e.g., sMCI, pMCI, AD).
-   - **Key Loss**: The counterfactual map regularization loss ($ \mathscr{L}_{\text{map}} $) ensures sparsity by suppressing irrelevant regions using $ \ell_1 $- and $ \ell_2 $-norms.
+   - **Key Loss**: The counterfactual map regularization loss ($\mathscr{L}_{\text{map}}$) ensures sparsity by suppressing irrelevant regions using $\ell_1$- and $\ell_2$-norms.
 
 2. **Target-Specific Localization**:
    - LEAR focuses on disease-relevant regions, such as early hippocampal changes in sMCI and global atrophy in AD.
-   - **Key Loss**: The classification loss ($ \mathscr{L}_{\text{cls}} $) ensures counterfactual maps transform the input toward the target label, emphasizing disease-specific regions.
+   - **Key Loss**: The classification loss ($\mathscr{L}_{\text{cls}}$) ensures counterfactual maps transform the input toward the target label, emphasizing disease-specific regions.
 
 3. **Fine-Grained Detailing**:
    - LEAR avoids blurry or noisy regions, producing sharper, more precise explanations compared to methods like VarGrad or Lime.
-   - **Key Loss**: The adversarial loss ($ \mathscr{L}_{\text{adv}}^{\mathscr{G}} $) maintains anatomical plausibility and realism in the maps.
+   - **Key Loss**: The adversarial loss ($\mathscr{L}_{\text{adv}}^{\mathscr{G}}$) maintains anatomical plausibility and realism in the maps.
 
 4. **Consistency Across Targets**:
    - LEAR produces smooth and logical transitions in counterfactual maps (e.g., sMCI → pMCI → AD), aligning with disease progression.
-   - **Key Loss**: The cycle consistency loss ($ \mathscr{L}_{\text{cyc}} $) enforces reversible and coherent transformations between conditions.
+   - **Key Loss**: The cycle consistency loss ($\mathscr{L}_{\text{cyc}}$) enforces reversible and coherent transformations between conditions.
 
 5. **Robustness to Artifacts**:
    - LEAR avoids highlighting irrelevant regions (e.g., brain edges), ensuring only biologically meaningful areas are emphasized.
-   - **Key Loss**: The total variation loss ($ \mathscr{L}_{\text{tv}} $) reduces abrupt or unnatural changes, improving smoothness and focus.
+   - **Key Loss**: The total variation loss ($\mathscr{L}_{\text{tv}}$) reduces abrupt or unnatural changes, improving smoothness and focus.
 
 6. **No Changes for "Normal" Label**:
    - LEAR generates minimal changes for Normal inputs, reflecting logical consistency as no transformation is needed when the input aligns with the target label.
