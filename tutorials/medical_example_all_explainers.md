@@ -1,5 +1,7 @@
 # Medical Image Classification with PnPXAI (1/2)
 
+<a href="https://colab.research.google.com/github/wltjr1007/pnpxai/blob/main/tutorials/lear_tutorial_explainer.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
 In this notebook, we demonstrate the use of the PnPXAI library for explaining a ResNet-based image classification model on the ADNI (Alzheimer's Disease Neuroimaging Initiative) dataset.
 
 **Contents:**
