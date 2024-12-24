@@ -123,7 +123,7 @@ for i in range(4):
 plt.show()
 ```
 
-![lear1](https://raw.githubusercontent.com/wltjr1007/pnpxai/refs/heads/main/tutorials/data/lear1.png)
+![lear1](./data/lear1.png)
 
 
 ### 2.2 Load Pre-trained ResNet Model<a name="load-model"></a>
@@ -335,7 +335,7 @@ plt.savefig("ADNI_LEAR.png", dpi=600)
 plt.show()
 ```
 
-![lear2](https://raw.githubusercontent.com/wltjr1007/pnpxai/refs/heads/main/tutorials/data/lear2.png)
+![lear2](./data/lear2.png)
 
 1. **Ventricle Changes (Indicated by Box 1):**
     *   In the "LEAR (Normal)" image, there is minimal change compared to the input, as expected.
@@ -413,7 +413,7 @@ plt.savefig("ADNI_ALL.png", dpi=600)
 plt.show()
 ```
 
-![lear3](https://raw.githubusercontent.com/wltjr1007/pnpxai/refs/heads/main/tutorials/data/lear3.png)
+![lear3](./data/lear3.png)
 
 
 ## 5. Evaluation of Explanations<a name="evaluation"></a>
@@ -467,4 +467,4 @@ plt.show()
 
 ```
 
-![lear4](https://raw.githubusercontent.com/wltjr1007/pnpxai/refs/heads/main/tutorials/data/lear4.png)
+![lear4](./data/lear4.png)
